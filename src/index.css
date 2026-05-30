@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+html, body, #root {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+:root {
+  /* LIGHT MODE - Elegant slate base with bright sky-blue and golden amber highlights */
+  --bg-main: #f8fafc; /* slate-50 */
+  --bg-card: #ffffff; /* pure white cards */
+  --bg-border: #e2e8f0; /* slate-200 */
+  --bg-border-light: #f1f5f9; /* slate-100 */
+  --bg-border-light-extra: #f8fafc; /* white/slate-50 alternative */
+  
+  --text-main: #0f172a; /* slate-900 */
+  --text-secondary: #334155; /* slate-700 */
+  --text-muted: #64748b; /* slate-500 */
+  --text-muted-secondary: #94a3b8; /* slate-400 */
+  
+  --color-cyan-acc: #0284c7; /* Sky / Cyan (Primary Blue) */
+  --color-cyan-acc-darker: #0369a1; /* sky-700 */
+  
+  --bg-cyan-950: #e0f2fe; /* sky-100 */
+  --border-cyan-900: #7dd3fc; /* sky-300 */
+  
+  --color-amber-acc: #b45309; /* warm amber gold */
+}
+
+/* Toggleable .dark mode */
+.dark {
+  /* DARK MODE - Cosmic space theme */
+  --bg-main: #000000; /* pure solid black */
+  --bg-card: #09090b; /* deep obsidian black */
+  --bg-border: #181c25; /* dark border */
+  --bg-border-light: #222735; 
+  --bg-border-light-extra: #2d3345;
+  
+  --text-main: #f8fafc; /* slate-50 */
+  --text-secondary: #f1f5f9; /* slate-100 (highly visible off-white) */
+  --text-muted: #cbd5e1; /* slate-300 (readable soft gray) */
+  --text-muted-secondary: #a3b3c9; /* slate-400 (very clear description gray) */
+  
+  --color-cyan-acc: #22d3ee; /* cyber bright cyan */
+  --color-cyan-acc-darker: #06b6d4; /* solid cyan */
+  
+  --bg-cyan-950: #083344; /* deep dark cyan background */
+  --border-cyan-900: #155e75; /* deep cyber border cyan */
+  
+  --color-amber-acc: #fbbf24; /* vibrant logo amber gold */
+}
+
+@theme {
+  --color-zinc-950: var(--bg-main);
+  --color-zinc-900: var(--bg-card);
+  --color-zinc-850: var(--bg-border);
+  --color-zinc-800: var(--bg-border-light);
+  --color-zinc-750: var(--bg-border-light-extra);
+  
+  --color-zinc-100: var(--text-main);
+  --color-zinc-200: var(--text-secondary);
+  --color-zinc-300: var(--text-secondary);
+  --color-zinc-400: var(--text-muted);
+  --color-zinc-450: var(--text-muted-secondary);
+  --color-zinc-500: var(--text-muted-secondary);
+  --color-zinc-550: var(--text-muted-secondary);
+  
+  --color-cyan-400: var(--color-cyan-acc);
+  --color-cyan-500: var(--color-cyan-acc-darker);
+  --color-cyan-950: var(--bg-cyan-950);
+  --color-cyan-900: var(--border-cyan-900);
+  
+  --color-amber-400: var(--color-amber-acc);
+  --color-amber-500: var(--color-amber-acc);
+
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}

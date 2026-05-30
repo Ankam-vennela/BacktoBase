@@ -1,0 +1,6 @@
+{
+  "name": "Back To Base",
+  "description": "Connecting Raw Talent with Global Opportunities - Mentorship and Skill Development Platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
